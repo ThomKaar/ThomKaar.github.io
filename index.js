@@ -51,25 +51,20 @@ const addWord = (text, index) => subtitle.appendChild(createWord(text, index));
 
 const createSubtitle = text => text.split(' ').map(addWord);
 
-createSubtitle('i never just shut up and think');
+// createSubtitle('i never just shut up and think');
 const cardContent = {
-    title: 'dick jokesss',
-    subtitle: 'have been around since the beginning of time...'
+    title: 'Easy Does it',
+    subtitle: 'figma collage poem of lyrics from my favorite artists...'
 };
 
 const tableContent = [
-    cardContent,
-    cardContent,
-    cardContent,
-    cardContent,
-    cardContent,
     cardContent
 ];
-const body = document.getElementsByTagName('body')[0];
+const cardSection = document.getElementById('card-section');
 const cardsGrid = document.createElement('div');
 cardsGrid.classList.add('grid');
 
-body.appendChild(cardsGrid);
+cardSection.appendChild(cardsGrid);
 
 const cards = tableContent.map((_c, idx) => createCard(cardsGrid, idx));
 
@@ -77,3 +72,31 @@ cards.map((card, idx) => {
     renderCardContent(card, tableContent[idx]);
 });
 
+const getRandomInt = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+
+    return Math.floor(Math.random() * (max-min) + min);
+};
+
+const programmerName = document.getElementsByClassName('name-title')[0];
+const cheekyText = document.getElementsByClassName('no-catch')[0];
+
+programmerName.addEventListener('mouseover', (event) => {
+    const lastTop = programmerName.style.top;
+    const lastLeft = programmerName.style.left;
+
+    console.group('lastTop: ', lastTop, 'lastLeft: ', lastLeft);
+
+    const top = getRandomInt(0, window.innerHeight - event.target.offsetHeight);
+    const left = getRandomInt(0, window.innerWidth - event.target.offsetWidth);
+    programmerName.style.top = `${top}px`;
+    programmerName.style.left = `${left}px`;
+
+    if (cheekyText.style !== 'inline-block') {
+        cheekyText.style.display = 'inline-block';
+    }
+
+    cheekyText.style.top = lastTop || 0;
+    cheekyText.style.left = lastLeft || 0;
+});
