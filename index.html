@@ -20,15 +20,9 @@
                 </h1>
             </li>
             <li>
-                <a>
+                <a href="#projects">
                     <i aria-hidden="true" class="fa-solid fa-diagram-project"></i>
                     Projects
-                </a>
-            </li>
-            <li>
-                <a>
-                    <i aria-hidden="true" class="fa-solid fa-camera-retro"></i>
-                    About
                 </a>
             </li>
             <li>
@@ -50,7 +44,7 @@
                 </a>
             </li>
             <li>
-                <a href="/" class="resume-button">
+                <a href="./resume.pdf" download="Thomas_Kaar_Resume.pdf" class="resume-button">
                     <i aria-hidden="true" class="fa-regular fa-file-pdf"></i>
                     Resume
                 </a>
@@ -65,6 +59,103 @@
         <p>I'm a developer specializing in React and Svelte.</p>
 
         <p>Currently, I'm developing front end experiences for <a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>.</p>
+    </section>
+    <div class="gradient-divider"></div>
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <p class="projects-intro">Here are some of my recent projects that I'm proud of.</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Yahoo Finance</h3>
+                    <p>This is where I currently work as a front end developer. I've worked on many parts of the site, including the quote page, live stream, checkout page, and premium paywalled analysis visualizations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Svelte</span>
+                        <span class="tech-tag">SvelteKit</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://finance.yahoo.com/quote/SPOT/" class="project-link">
+                            <i class="fa-solid fa-external-link-alt"></i>
+                            Quote Page
+                        </a>
+                        <a href="https://finance.yahoo.com/live" class="project-link">
+                            <i class="fa-solid fa-external-link-alt"></i>
+                            Live Stream
+                        </a>
+                        <a href="https://finance.yahoo.com/about/plans/select-plan" class="project-link">
+                            <i class="fa-solid fa-external-link-alt"></i>
+                            Checkout Page
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                        <h3>Nasdaqle - A Financial Wordle Game</h3>
+                        <p>
+                            A wordle game where the player deduces a NASDAQ100 stock based on the ticker name, price, PE Ratio, price change and market cap.
+                        </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Svelte</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThomKaar/nasdaqle" class="project-link">
+                            <i class="fa-brands fa-github"></i>
+                            Code
+                        </a>
+                        <a href="https://nasdaqle.vercel.app/" class="project-link">
+                            <i class="fa-solid fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i class="fa-solid fa-mobile-alt"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>CA For Palestine</h3>
+                    <p>A site that generate messages and then uses webscraping to contact California Senators, advocating to stop funding the IDF's war crimes in Palestine.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">Puppeteer</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThomKaar/ca-for-palestine" class="project-link">
+                            <i class="fa-brands fa-github"></i>
+                            Code
+                        </a>
+                        <a href="https://ca-for-palestine.vercel.app/" class="project-link">
+                            <i class="fa-solid fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <div class="gradient-divider"></div>
     <section id="contacts">
@@ -88,7 +179,7 @@
                 <i aria-hidden="true" class="fa-regular fa-envelope"></i>
             </a>
         </div>
-        <span>&copy; 2023 Thomas Kaar. All rights. reserved.</span>
+        <span>&copy; 2025 Thomas Kaar. All rights. reserved.</span>
         <div id="bubble-wrapper">
         </div>
     </footer>
