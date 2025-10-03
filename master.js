@@ -92,7 +92,7 @@ const animateBubble = x => {
 
     wrapper.appendChild(bubble);
 
-    bubble.style.background = 'linear-gradient(90deg, #b14dc3 0%, #f30658 76%)'
+    bubble.style.background = 'linear-gradient(135deg, #3b82f6 0%, #06b6d4 50%, #8b5cf6 100%)'
 
     setTimeout(() => wrapper.removeChild(bubble), 2000);
 };
