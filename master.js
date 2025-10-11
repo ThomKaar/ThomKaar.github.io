@@ -12,46 +12,46 @@ const alternator = {
     1: highlightDoor
 }
 
-function enableOpacityInterval() {
-    changeOpacity();
-    intervalId = setInterval(changeOpacity, 2000)
-};
+// function enableOpacityInterval() {
+//     changeOpacity();
+//     intervalId = setInterval(changeOpacity, 2000)
+// };
 
-function removeOpacityAndInterval () {
-    doorImage.style.opacity = 1;
-    highlightDoor.style.opacity = 0;
-    clearInterval(intervalId);
-}
+// function removeOpacityAndInterval () {
+//     doorImage.style.opacity = 1;
+//     highlightDoor.style.opacity = 0;
+//     clearInterval(intervalId);
+// }
 
-doorContainer?.addEventListener('mouseenter', enableOpacityInterval);
-doorContainer?.addEventListener('mouseleave', removeOpacityAndInterval);
+// doorContainer?.addEventListener('mouseenter', enableOpacityInterval);
+// doorContainer?.addEventListener('mouseleave', removeOpacityAndInterval);
 
 
 
-// changeOpacity
-function changeOpacity() {
-    console.log('we are running change opacity!');
-    if (alternatorPointer == 0) {
-        doorImage.style.opacity = 1;
-        highlightDoor.style.opacity = 0;
-    } else {
-        doorImage.style.opacity = 0;
-        highlightDoor.style.opacity = 1;
-    }
-    alternatorPointer = alternatorPointer ? 0 : 1;
-}
+// // changeOpacity
+// function changeOpacity() {
+//     console.log('we are running change opacity!');
+//     if (alternatorPointer == 0) {
+//         doorImage.style.opacity = 1;
+//         highlightDoor.style.opacity = 0;
+//     } else {
+//         doorImage.style.opacity = 0;
+//         highlightDoor.style.opacity = 1;
+//     }
+//     alternatorPointer = alternatorPointer ? 0 : 1;
+// }
 
-doorContainer?.addEventListener('mouseenter', enableOpacityInterval);
-doorContainer?.addEventListener('mouseleave', removeOpacityAndInterval);
-doorContainer?.addEventListener('click', revealInvite);
+// doorContainer?.addEventListener('mouseenter', enableOpacityInterval);
+// doorContainer?.addEventListener('mouseleave', removeOpacityAndInterval);
+// doorContainer?.addEventListener('click', revealInvite);
 
-function revealInvite () {
-    doorContainer.removeEventListener('mouseenter', enableOpacityInterval);
-    doorContainer.removeEventListener('mouseleave', removeOpacityAndInterval);
-    removeOpacityAndInterval(intervalId);
-    doorContainer.style.display = 'none';
-    invite.style.display = 'block';
-}
+// function revealInvite () {
+//     doorContainer.removeEventListener('mouseenter', enableOpacityInterval);
+//     doorContainer.removeEventListener('mouseleave', removeOpacityAndInterval);
+//     removeOpacityAndInterval(intervalId);
+//     doorContainer.style.display = 'none';
+//     invite.style.display = 'block';
+// }
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let interval = null;
